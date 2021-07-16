@@ -18,13 +18,13 @@
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
   <a-assets>
-    <a-asset-item id="apollo" response-type="arraybuffer" src="data/scene.glb"></a-asset-item>
+    <a-asset-item id="apollo" response-type="arraybuffer" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/Theoverflow/ARWebApp1/master/data/scene.glb"></a-asset-item>
   </a-assets>
 
     <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
       <a-nft
       type="nft"
-      url="data/ST/"
+      url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/Theoverflow/ARWebApp1/master/data/ST/ST"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
@@ -33,7 +33,7 @@
          <a-entity
            id = "firstEntity"
           position="0.2 0 0"
-           scale="0.001 0.001 0.001"
+           scale="1 1 1"
           rotation="90 180 0"
           gltf-model="#apollo"
           animation-mixer
